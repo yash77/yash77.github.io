@@ -1,43 +1,132 @@
 body {
-    margin: 60px auto;
-    width: 70%;
+  margin: 60px auto;
+  background-color: #424242;
 }
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
+nav ul,
+footer ul {
+  font-family: "Helvetica", "Arial", "Sans-Serif";
+  padding: 0px;
+  list-style: none;
+  font-weight: bold;
 }
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
+nav ul li,
+footer ul li {
+  display: inline;
+  margin-right: 20px;
 }
 a {
-    text-decoration: none;
-    color: #999;
-}
-a:hover {
-    text-decoration: underline;
+  text-decoration: none;
+  color: #999;
 }
 h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-}
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
-}
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+  font-size: 3em;
+  font-family: "Helvetica", "Arial", "Sans-Serif";
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
+footer {
+  border-top: 1px solid #d5d5d5;
+  font-size: 0.8em;
+}
+
+ul.posts {
+  margin: 20px auto 40px;
+  font-size: 1.5em;
 }
 
 ul.posts li {
-    list-style: none;
+  list-style: none;
 }
+
+.stake-division {
+  display: flex;
+  justify-content: space-between;
+}
+
+body {
+  margin: 0;
+}
+
+.icon-bar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.icon-bar a {
+  float: left;
+  width: 20%;
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  font-size: 36px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #4caf50;
+}
+
+.default-color {
+  color: white;
+}
+
+.flex {
+  display: flex;
+}
+
+.stake-header {
+  padding: 30px;
+}
+
+.col-1 {
+  padding: 20px;
+}
+
+.col-2 {
+  padding: 20px;
+  width: 400px;
+}
+
+.input-styling {
+  background: dimgrey;
+  padding: 10px 0 10px 10px;
+  margin-bottom: 10px;
+  width: 420px;
+}
+
+.stake {
+  background-color: black;
+  padding: 20px;
+}
+
+.stake-span {
+  float: right;
+}
+
+.start-day-width {
+  width: 35%;
+}
+
+.longer-bigger-div {
+  margin-left: 20px;
+}
+
+.share-division {
+  padding: 20px 0;
+}
+th {
+  text-align: left;
+}
+
+.padding-left {
+  padding-left: 20px;
+}
+.font-24 {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 20px 0 0 20px;
+}
+
