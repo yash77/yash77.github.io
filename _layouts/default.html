@@ -1,30 +1,340 @@
 <!DOCTYPE html>
-	<html>
-		<head>
-			<title>{{ page.title }}</title>
-			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/css/main.css">
-		</head>
-		<body>
-			<nav>
-	    		<ul>
-	        		<li><a href="/">Home</a></li>
-		        	<li><a href="/about">About</a></li>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <link rel="stylesheet" type="text/css" href="main.css" />
+  <script>
+    function deleteRow(el) {
+      var tbl = el.parentNode.parentNode.parentNode;
+      var row = el.parentNode.parentNode.rowIndex;
+      tbl.deleteRow(row);
+    }
+    function addRow() {
+      btn.setAttribute("onclick", "deleteRow(this)");
+      cell4.appendChild(btn);
+    }
+  </script>
 
-	    		</ul>
-			</nav>
-			<div class="container">
-			
-			{{ content }}
-			
-			</div><!-- /.container -->
-			<footer>
-	    		<ul>
-	        		<li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
-				<li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
-	        		<li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
-				<li>YASH YAHA</li>
-				</ul>
-			</footer>
-		</body>
-	</html>
+  <body>
+    <div class="icon-bar">
+      <a href="#"><i class="fa fa-home">Transfer</i></a>
+      <a href="#"><i class="fa fa-search">Stake</i></a>
+      <a href="#"><i class="fa fa-envelope">Claim</i></a>
+      <a href="#"><i class="fa fa-globe">Refer</i></a>
+      <a href="#"><i class="fa fa-trash">Transform</i></a>
+    </div>
+    <div class="default-color stake-header">
+      Stake
+    </div>
+    <div class="default-color flex ">
+      <div class="col-1">
+        <div class="input-styling color-blue">
+          Stake Amount in Hex (52,652 HEX Available)
+          <p class="default-color">
+            52,652,02543536
+          </p>
+        </div>
+        <div class="input-styling">
+          Stake Length in Days
+          <p class="default-color">
+            162
+          </p>
+        </div>
+        <div class="stake-division">
+          <div class="stake">STAKE</div>
+          <div class="start-day-width">
+            <div>
+              Start Day:
+              <span class="stake-span">354</span>
+            </div>
+            <div>
+              Last Full Day:
+              <span class="stake-span">193</span>
+            </div>
+            <div>
+              End Day:
+              <span class="stake-span">355</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+        Stake Bonuses
+        <div class="longer-bigger-div">
+          <div>
+            Longer Pays Better:
+            <span class="stake-span">
+              +1221 HEX
+            </span>
+          </div>
+          <div>
+            Bigger Pays Better:
+            <span class="stake-span">
+              +5663 HEX
+            </span>
+          </div>
+          <div>
+            Total:
+            <span class="stake-span">
+              +4761 HEX
+            </span>
+          </div>
+          <div>
+            Effective HEX:
+            <span class="stake-span">
+              57,311 HEX
+            </span>
+          </div>
+        </div>
+        <div class="share-division">
+          <div>
+            Share Rate:
+            <span class="stake-span">
+              96,278M / HEX
+            </span>
+          </div>
+          <div>
+            Stake Shares:
+            <span class="stake-span">
+              5,517T
+            </span>
+          </div>
+        </div>
+        <div>
+          <div>
+            BigPayDay HEX*:
+            <span class="stake-span">
+              996,278M HEX
+            </span>
+          </div>
+          <div>
+            % Gain*:
+            <span class="stake-span">
+              196.007%
+            </span>
+          </div>
+          <div>
+            % APY*:
+            <span class="stake-span">
+              454.77%
+            </span>
+          </div>
+        </div>
+        <div>
+          <i>If stake is still open on BigPayDay</i>
+        </div>
+      </div>
+    </div>
+    <div class="default-color font-24">Active Stakes</div>
+    <table
+      id="createOrderTable"
+      width="100%"
+      class="default-color padding-left"
+    >
+      <tr>
+        <th>Count</th>
+        <th>Product</th>
+        <th>Mesh</th>
+        <th>Delete</th>
+        <th>Count</th>
+        <th>Product</th>
+        <th>Mesh</th>
+        <th>Delete</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>OL</td>
+        <td>100</td>
+        <td>
+          hex
+        </td>
+        <td>1</td>
+        <td>OL</td>
+        <td>100</td>
+        <td>
+          <button
+            type="button"
+            class="close"
+            aria-hidden="true"
+            onclick="deleteRow(this);"
+          >
+            &times;
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>AL</td>
+        <td>200</td>
+        <td>
+          two
+        </td>
+        <td>2</td>
+        <td>AL</td>
+        <td>200</td>
+        <td>
+          <button
+            type="button"
+            class="close"
+            aria-hidden="true"
+            onclick="deleteRow(this);"
+          >
+            &times;
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>BL</td>
+        <td>300</td>
+        <td>
+          hex
+        </td>
+        <td>3</td>
+        <td>BL</td>
+        <td>300</td>
+        <td>
+          <button
+            type="button"
+            class="close"
+            aria-hidden="true"
+            onclick="deleteRow(this);"
+          >
+            &times;
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>CL</td>
+        <td>400</td>
+        <td>
+          fourth
+        </td>
+        <td>CL</td>
+        <td>400</td>
+        <td>
+          six
+        </td>
+        <td>
+          <button
+            type="button"
+            class="close"
+            aria-hidden="true"
+            onclick="deleteRow(this);"
+          >
+            &times;
+          </button>
+        </td>
+      </tr>
+    </table>
+
+    <div class="default-color font-24">Stake History</div>
+    <table
+      id="createOrderTable2 "
+      width="100%"
+      class="default-color padding-left"
+    >
+      <tr>
+        <th>Count</th>
+        <th>Product</th>
+        <th>Mesh</th>
+        <th>Delete</th>
+        <th>Count</th>
+        <th>Product</th>
+        <th>Mesh</th>
+        <th>Delete</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>OL</td>
+        <td>100</td>
+        <td>
+          hex
+        </td>
+        <td>1</td>
+        <td>OL</td>
+        <td>100</td>
+        <td>
+          <button
+            type="button"
+            class="close"
+            aria-hidden="true"
+            onclick="deleteRow(this);"
+          >
+            &times;
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>AL</td>
+        <td>200</td>
+        <td>
+          two
+        </td>
+        <td>2</td>
+        <td>AL</td>
+        <td>200</td>
+        <td>
+          <button
+            type="button"
+            class="close"
+            aria-hidden="true"
+            onclick="deleteRow(this);"
+          >
+            &times;
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>BL</td>
+        <td>300</td>
+        <td>
+          hex
+        </td>
+        <td>3</td>
+        <td>BL</td>
+        <td>300</td>
+        <td>
+          <button
+            type="button"
+            class="close"
+            aria-hidden="true"
+            onclick="deleteRow(this);"
+          >
+            &times;
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>CL</td>
+        <td>400</td>
+        <td>
+          fourth
+        </td>
+        <td>CL</td>
+        <td>400</td>
+        <td>
+          six
+        </td>
+        <td>
+          <button
+            type="button"
+            class="close"
+            aria-hidden="true"
+            onclick="deleteRow(this);"
+          >
+            &times;
+          </button>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
