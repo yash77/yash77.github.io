@@ -5,7 +5,7 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
   />
-  <link rel="stylesheet" type="text/css" href="/css/main.css" />
+  <link rel="stylesheet" type="text/css" href="main.css" />
   <script>
     function deleteRow(el) {
       var tbl = el.parentNode.parentNode.parentNode;
@@ -20,29 +20,63 @@
 
   <body>
     <div class="icon-bar">
-      <a href="#"><i class="fa fa-home">Transfer</i></a>
-      <a href="#"><i class="fa fa-search">Stake</i></a>
-      <a href="#"><i class="fa fa-envelope">Claim</i></a>
-      <a href="#"><i class="fa fa-globe">Refer</i></a>
-      <a href="#"><i class="fa fa-trash">Transform</i></a>
+        <a > <img src="https://go.hex.win/img/logo-white.a7e2731f.png" alt="jc" class="logo"/></a>
+
+      <a href="#"><i class="fa fa-exchange" aria-hidden="true">Transfer</i></a>
+      <a href="#" class="background-black"><i class="fa fa-university" aria-hidden="true">Stake</i></a>
+      <a href="#"><i class="fa fa-btc" aria-hidden="true"></i>Claim</i></a>
+      <a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i>Refer</i></a>
+      <a href="#"><i class="fa fa-random" aria-hidden="true"></i>Transform</i></a>
+      <a class="add-metamask">ADD TO METAMASK </a>
+      <a class="english-text">English</a>
+      <a class="down-icon"><i class="fa fa-sort-desc " style="font-size:24px"></i></a>
+      
     </div>
+  
+
     <div class="default-color stake-header">
       Stake
     </div>
     <div class="default-color flex ">
       <div class="col-1">
+         
         <div class="input-styling color-blue">
+            <div>
           Stake Amount in Hex (52,652 HEX Available)
           <p class="default-color">
             52,652,02543536
           </p>
         </div>
-        <div class="input-styling">
+      
+        <div class="padding-25">
+                <div class="default-color color-black">
+                    MAX
+                </div>
+                <div class="weight-600">
+                    HEX
+                </div>
+        </div>
+    </div>
+   
+  
+        <div class="input-styling dark-grey grey-border">
+            <div>
           Stake Length in Days
           <p class="default-color">
             162
           </p>
+            </div>
+          <div class="padding-25">
+                <div class="color-black">
+                        <i class="fa fa-calendar calender" aria-hidden="true"></i>
+                </div>
+                <div class="default-color weight-600">
+                    Days
+                </div>
+
         </div>
+        </div>
+       
         <div class="stake-division">
           <div class="stake">STAKE</div>
           <div class="start-day-width">
@@ -64,13 +98,13 @@
       <div class="col-2">
         Stake Bonuses
         <div class="longer-bigger-div">
-          <div>
+          <div class="dark-grey">
             Longer Pays Better:
             <span class="stake-span">
               +1221 HEX
             </span>
           </div>
-          <div>
+          <div class="dark-grey">
             Bigger Pays Better:
             <span class="stake-span">
               +5663 HEX
@@ -82,13 +116,13 @@
               +4761 HEX
             </span>
           </div>
-          <div>
-            Effective HEX:
-            <span class="stake-span">
-              57,311 HEX
-            </span>
-          </div>
         </div>
+        <div>
+                Effective HEX:
+                <span class="stake-span">
+                  57,311 HEX
+                </span>
+              </div>
         <div class="share-division">
           <div>
             Share Rate:
@@ -124,7 +158,7 @@
           </div>
         </div>
         <div>
-          <i>If stake is still open on BigPayDay</i>
+          <i class="dark-grey">* If stake is still open on BigPayDay</i>
         </div>
       </div>
     </div>
@@ -135,13 +169,13 @@
       class="default-color padding-left"
     >
       <tr>
-        <th>Count</th>
-        <th>Product</th>
-        <th>Mesh</th>
-        <th>Delete</th>
-        <th>Count</th>
-        <th>Product</th>
-        <th>Mesh</th>
+        <th>Start</th>
+        <th>End</th>
+        <th>Progress</th>
+        <th>Principal</th>
+        <th>Shares</th>
+        <th>BigPayDay</th>
+        <th>Interest</th>
         <th>Delete</th>
       </tr>
       <tr>
@@ -239,14 +273,14 @@
       class="default-color padding-left"
     >
       <tr>
-        <th>Count</th>
-        <th>Product</th>
-        <th>Mesh</th>
-        <th>Delete</th>
-        <th>Count</th>
-        <th>Product</th>
-        <th>Mesh</th>
-        <th>Delete</th>
+            <th>Start</th>
+            <th>End</th>
+            <th>Progress</th>
+            <th>Principal</th>
+            <th>Shares</th>
+            <th>BigPayDay</th>
+            <th>Interest</th>
+            <th>Delete</th>
       </tr>
       <tr>
         <td>1</td>
@@ -335,6 +369,6 @@
         </td>
       </tr>
     </table>
+    <div class="logo"></div>
   </body>
 </html>
-
